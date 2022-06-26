@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="سبحة اسلامة تقدر تسبح بيها و تشوف سجل التسبيحات عند الانتهاء">
+    <!-- make the icon -->
+    <link rel="shortcut icon" href="Images/sebha icon.png" type="image/x-icon">
+    <title>سبحة</title>
+    <!-- insert Normalized -->
+    <link rel="stylesheet" href="/CSS/Normalize.css">
+    <!-- insert Font awesome -->
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <!-- insert css -->
+    <link rel="stylesheet" href="/CSS/style.css"> 
+</head>
+<body >
+    <div class="navsection">
+        <nav class="navbar">
+            
+                <ul>
+                    <li id="Logo">Mahmoud <span>Ramzy</span></li>
+                    <li id="title"> سبحة  ديجيتال </li>
+                    <li id="Menu"> <i class="fa-solid fa-bars toggle-menu"></i> </li>
+                </ul>
+                <ul class="menu" id="menumenu">
+                        <li id="Dark"><i class="fa-solid fa-moon"></i> Dark theme</li>
+                        <li class="his" id="His1" onclick="Histoory()"><i class="fa-solid fa-clock-rotate-left"></i> History
+                            <ul class="Histoory" id="His">
+                                <li id="sobhan"></li>
+                                <li id="elhamd"></li>
+                                <li id="la"></li>
+                                <li id="allah"></li>
+                                <li id="astaghfer"></li>
+                                <li id="sobhanWaBehamdeh"></li>
+                                <li id="sobhanAlazem"></li>
+                                <li id="profit"></li>
+                            </ul>
+                        </li>
+                        <li id="contacts"><i class="fa-regular fa-address-book"></i><a href="mailto:mahmoudramzy741@gmail.com"> Contact</a></li>
+                </ul>
+        </nav>
+    </div>
+
+        
+        <div class="zikr">
+            <div  class="container">
+            <select name="tasbih" id="tasbih" onchange="getSelectedValue()">
+                <option value="-1">اختار التسبيحة :</option>
+                <option value="0">سبحان اللَّهُ</option>
+                <option value="1">الحمد للَّهُ</option>
+                <option value="2">لا اله الا اللَّهُ</option>
+                <option value="3">اللَّهُ اكبر</option>
+                <option value="4">استغفر اللَّهُ</option>
+                <option value="5">سبحان اللَّهُ وبحمده</option>
+                <option value="6">سبحان اللَّهُ العظيم</option>
+                <option class="Nabi" value="7">صلاة علي النبي</option>
+            </select>
+            </div>
+        </div>
+
+        <div class="counter">
+            <div  class="container">
+                <h2 id="root"></h2>
+                <h3 id="history"></h5>
+                <button class="increase" id="increase" onclick="Increment()"> + </button>
+                <button class="reset" id="reset" onclick="Clear()">reset</button>
+            </div>
+
+
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
