@@ -1,5 +1,5 @@
-var History =[0, 0, 0, 0, 0, 0, 0, 0];
-var Name=["    سبحان الله : ","الحمد لله : ","لا اله الا الله : ","الله اكبر : ","استغفر الله : ","سبحان الله و بحمده : ", "سبحان الله العظيم : ", "صلاة علي النبي : "]
+var History =[0, 0, 0, 0, 0, 0, 0, 0, 0];
+var Name=["    سبحان الله : ","الحمد لله : ","لا اله الا الله : ","الله اكبر : ","استغفر الله : ","لا حول ولا قوة الا بالله  : " ,"سبحان الله و بحمده : ", "سبحان الله العظيم : ", "صلاة علي النبي : "]
 var Times=0;
 var histShowen=false;
 var selectedValue=-1;
@@ -51,6 +51,10 @@ function Histoory(){
         document.getElementById("profit").innerText=Name[7] + History[7];
         document.getElementById("profit").style.display="block";
     }else{document.getElementById("profit").style.display="none";}
+    if(History[8]!=0){
+        document.getElementById("7awkala").innerText=Name[8] + History[8];
+        document.getElementById("7awkala").style.display="block";
+    }else{document.getElementById("7awkala").style.display="none";}
 //Showing the whole entity
     if(histShowen ===false){
         document.getElementById("His1").style.marginTop ='40px';
